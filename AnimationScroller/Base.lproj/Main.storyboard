@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="mbq-c7-D5n">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="PingFang.ttc">
+            <string>PingFangTC-Regular</string>
+            <string>PingFangTC-Semibold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AnimationScroller" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_restaurant02" translatesAutoresizingMaskIntoConstraints="NO" id="tlY-lP-CM9">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="295"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="295" id="uh5-Lg-gAk"/>
+                                </constraints>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="ktB-G2-2wQ">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="MainImageCell" rowHeight="296" id="TmM-xt-ak6" customClass="MainImageCell" customModule="AnimationScroller" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="1" width="375" height="296"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="TmM-xt-ak6" id="rRL-1O-2Wl">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="295.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TSL-ix-KNM">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="295.5"/>
+                                                    <color key="backgroundColor" red="0.83529411764705885" green="0.73725490196078436" blue="0.58431372549019611" alpha="0.0" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="TSL-ix-KNM" secondAttribute="height" multiplier="75:59" priority="750" id="pMG-xK-pzE"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="TSL-ix-KNM" secondAttribute="trailing" id="0WI-8E-cfq"/>
+                                                <constraint firstItem="TSL-ix-KNM" firstAttribute="leading" secondItem="rRL-1O-2Wl" secondAttribute="leading" id="9Eo-fs-pHX"/>
+                                                <constraint firstAttribute="bottom" secondItem="TSL-ix-KNM" secondAttribute="bottom" id="Jja-DV-jlJ"/>
+                                                <constraint firstItem="TSL-ix-KNM" firstAttribute="top" secondItem="rRL-1O-2Wl" secondAttribute="top" id="yxJ-RX-Sdn"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="RestaurantInfoCell" rowHeight="1500" id="taf-OI-V7W" customClass="RestaurantInfoCell" customModule="AnimationScroller" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="297" width="375" height="1500"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="taf-OI-V7W" id="GNG-b3-Zs5">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="1499.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="法式料理" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8rv-7D-Z73">
+                                                    <rect key="frame" x="28" y="16" width="48" height="17"/>
+                                                    <fontDescription key="fontDescription" name="PingFangTC-Regular" family="PingFang TC" pointSize="12"/>
+                                                    <color key="textColor" red="0.46666666666666667" green="0.46666666666666667" blue="0.46666666666666667" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Geschmark 葛許曼法式餐廳" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t4Z-FY-ks6">
+                                                    <rect key="frame" x="28" y="41" width="229" height="25.5"/>
+                                                    <fontDescription key="fontDescription" name="PingFangTC-Semibold" family="PingFang TC" pointSize="18"/>
+                                                    <color key="textColor" red="0.18431372549019609" green="0.1764705882352941" blue="0.16862745098039217" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aUR-Up-bYn">
+                                                    <rect key="frame" x="28" y="104" width="319" height="933.5"/>
+                                                    <mutableString key="text">較具有特色的食品有：青蛙腿、燉雞、法國蝸牛、油封鴨；主食主要是麵包，具有法國特色的麵包有可頌和棍式麵包。台灣最早引進正統法式精緻餐飲的餐廳之一，法國餐館以其豪華的禮儀和風味著稱，世界各大城市中最豪華昂貴的餐館幾乎都是法國餐館。法國是世界著名的飲食文化大國，在法國不同地區有不同的特色美食。法國比較具有特色的食品有：青蛙腿（grenouille）、燉雞（coq au vin）、法國蝸牛（escargot）、油封鴨（confit de canard）；主食主要是麵包，具有法國特色的麵包有可頌（croissant）和棍式麵包（baguette）。較具有特色的食品有：青蛙腿（grenouille）、燉雞（coq au vin）、法國蝸牛（escargot）、油封鴨（confit de canard）；主食主要是麵包，具有法國特色的麵包有可頌（croissant）和棍式麵包（baguette）。台灣最早引進正統法式精緻餐飲的餐廳之一，法國餐館以其豪華的禮儀和風味著稱，世界各大城市中最豪華昂貴的餐館幾乎都是法國餐館。法國是世界著名的飲食文化大國，在法國不同地區有不同的特色美食。法國比較具有特色的食品有：青蛙腿（grenouille）、燉雞（coq au vin）、法國蝸牛（escargot）、油封鴨（confit de canard）；主食主要是麵包，具有法國特色的麵包有可頌（croissant）和棍式麵包（baguette）。較具有特色的食品有：青蛙腿（grenouille）、燉雞（coq au vin）、法國蝸牛（escargot）、油封鴨（confit de canard）；主食主要是麵包，具有法國特色的麵包有可頌（croissant）和棍式麵包（baguette）。台灣最早引進正統法式精緻餐飲的餐廳之一，法國餐館以其豪華的禮儀和風味著稱，世界各大城市中最豪華昂貴的餐館幾乎都是法國餐館。法國是世界著名的飲食文化大國，在法國不同地區有不同的特色美食。法國比較具有特色的食品有：青蛙腿（grenouille）、燉雞（coq au vin）、法國蝸牛（escargot）、油封鴨（confit de canard）；主食主要是麵包，具有法國特色的麵包有可頌（croissant）和棍式麵包（baguette）。</mutableString>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o5d-Ah-1rp">
+                                                    <rect key="frame" x="310" y="5" width="40" height="40"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="40" id="Fko-L5-cc8"/>
+                                                        <constraint firstAttribute="height" constant="40" id="gKc-5B-xIK"/>
+                                                    </constraints>
+                                                    <state key="normal" image="dicover_icon_rank"/>
+                                                </button>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Ha-J0-o9X">
+                                                    <rect key="frame" x="28" y="74" width="212" height="20"/>
+                                                    <attributedString key="attributedText">
+                                                        <fragment content="心價比 3.2 | 服務 3.8 | 環境 3.8   ">
+                                                            <attributes>
+                                                                <font key="NSFont" size="14" name="PingFangTC-Regular"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BPM-qd-0cw">
+                                                    <rect key="frame" x="270" y="5" width="40" height="40"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="40" id="Jzo-Wd-E2k"/>
+                                                        <constraint firstAttribute="height" constant="40" id="ZLs-xh-VYH"/>
+                                                    </constraints>
+                                                    <state key="normal" image="dicover_icon_collect"/>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="BPM-qd-0cw" firstAttribute="centerY" secondItem="o5d-Ah-1rp" secondAttribute="centerY" id="0jc-EN-yiA"/>
+                                                <constraint firstItem="3Ha-J0-o9X" firstAttribute="leading" secondItem="t4Z-FY-ks6" secondAttribute="leading" id="4Ds-dZ-iT1"/>
+                                                <constraint firstItem="8rv-7D-Z73" firstAttribute="leading" secondItem="GNG-b3-Zs5" secondAttribute="leadingMargin" constant="13" id="4Pe-VO-6Pt"/>
+                                                <constraint firstItem="3Ha-J0-o9X" firstAttribute="top" secondItem="t4Z-FY-ks6" secondAttribute="bottom" constant="7.5" id="Agn-6W-lep"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="o5d-Ah-1rp" secondAttribute="trailing" constant="10" id="EJK-sN-WRm"/>
+                                                <constraint firstItem="aUR-Up-bYn" firstAttribute="top" secondItem="3Ha-J0-o9X" secondAttribute="bottom" constant="10" id="Ges-2C-oMU"/>
+                                                <constraint firstItem="t4Z-FY-ks6" firstAttribute="top" secondItem="8rv-7D-Z73" secondAttribute="bottom" constant="8" id="LuZ-72-u2k"/>
+                                                <constraint firstItem="o5d-Ah-1rp" firstAttribute="centerY" secondItem="8rv-7D-Z73" secondAttribute="centerY" id="PcC-IV-UpB"/>
+                                                <constraint firstItem="t4Z-FY-ks6" firstAttribute="leading" secondItem="GNG-b3-Zs5" secondAttribute="leadingMargin" constant="13" id="Vvo-ha-IPc"/>
+                                                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="aUR-Up-bYn" secondAttribute="bottom" constant="10" id="Y1o-Fc-GIb"/>
+                                                <constraint firstItem="aUR-Up-bYn" firstAttribute="leading" secondItem="3Ha-J0-o9X" secondAttribute="leading" id="aTe-gg-jOc"/>
+                                                <constraint firstItem="o5d-Ah-1rp" firstAttribute="leading" secondItem="BPM-qd-0cw" secondAttribute="trailing" id="bni-Wl-YC6"/>
+                                                <constraint firstItem="aUR-Up-bYn" firstAttribute="centerX" secondItem="GNG-b3-Zs5" secondAttribute="centerX" id="tgr-Kz-ssX"/>
+                                                <constraint firstItem="8rv-7D-Z73" firstAttribute="top" secondItem="GNG-b3-Zs5" secondAttribute="topMargin" constant="5" id="vQn-nt-QZP"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="isLikeButton" destination="BPM-qd-0cw" id="qjx-OE-ofP"/>
+                                            <outlet property="ratingButton" destination="o5d-Ah-1rp" id="wst-5q-JxY"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ktB-G2-2wQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="2AK-fy-U08"/>
+                            <constraint firstAttribute="trailing" secondItem="tlY-lP-CM9" secondAttribute="trailing" id="4UC-Ur-lWP"/>
+                            <constraint firstItem="ktB-G2-2wQ" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="AUZ-h5-zBs"/>
+                            <constraint firstItem="ktB-G2-2wQ" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Ind-Hv-Kg1"/>
+                            <constraint firstItem="tlY-lP-CM9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="dDU-kx-jkg"/>
+                            <constraint firstAttribute="top" secondItem="ktB-G2-2wQ" secondAttribute="top" id="gw4-f8-Lty"/>
+                            <constraint firstItem="tlY-lP-CM9" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="jGI-XE-Nqe"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="6Kf-d9-x1s">
+                        <nil key="title"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="mainImage" destination="tlY-lP-CM9" id="OAP-wE-ShK"/>
+                        <outlet property="mainImageHeight" destination="uh5-Lg-gAk" id="5bZ-Tf-VLe"/>
+                        <outlet property="tableViewTopSpace" destination="gw4-f8-Lty" id="m0E-8A-fAj"/>
+                        <outlet property="tableview" destination="ktB-G2-2wQ" id="brA-Ew-czm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="709.60000000000002" y="116.49175412293854"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="RNg-Qe-hJc">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="mbq-c7-D5n" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Cn4-iF-kMh">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="fbe-6t-QVQ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cxj-VR-Cvs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-46" y="118"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="dicover_icon_collect" width="21" height="21"/>
+        <image name="dicover_icon_rank" width="25" height="25"/>
+        <image name="img_restaurant02" width="279" height="185"/>
+    </resources>
+</document>
